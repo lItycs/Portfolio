@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ліза Шейко - Portfolio</title>
+    <link rel="stylesheet" href="code-css/index.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Ліза Шейко</h1>
+    </header>
+    
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#home"><img src="Img/Home.png" alt="Home"></a></li>
+            <li><a href="#about"><img src="Img/People.png" alt="About"></a></li>
+            <li><a href="#portfolio"><img src="Img/Portfolio.png" alt="Portfolio"></a></li>
+            <li><a href="#contact"><img src="Img/Contact-white.png" alt="Contact"></a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h2>Контент <span class="highlight">Менеджер</span></h2>
+                <p>Створюю, редагую та публікую контент на веб-сайтах і в соцмережах, забезпечуючи його якість та відповідність аудиторії.</p>
+                <div class="tech-tags">
+                    <span>Horoshop</span><span>Prom</span><span>Rozetka</span><span>Instagram</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Img/Customer Persona 3D Animated Icon.gif" alt="Animated Representation">
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+          <div class="about-content">
+              <h2>Про мене</h2>
+              <p class="subtitle">🚀 Перетворюю ідеї і концепти в реальність</p>
+              <h1>Привіт я <br><span class="highlight">Ліза Шейко</span></h1>
+              <p class="description">🔹 Створення та редагування контенту — написання текстів, підбір зображень, відео, інфографіки.</p>
+                <p class="description">🔹 Адміністрування сайту — наповнення сторінок, оновлення інформації, оптимізація структури контенту.</p>
+                <p class="description">🔹 SEO-оптимізація — використання ключових слів, мета-описів для покращення видимості сайту в пошукових системах.</p>
+                <p class="description">🔹 Співпраця з командою — комунікація з копірайтерами, дизайнерами, маркетологами.</p>
+                <p class="description">🔹 Робота в соцмережах — публікація постів, ведення сторінок, взаємодія з аудиторією.</p>
+              <div class="buttons">
+                  <a href="Img/Резюме.pdf" class="btn primary" download>📥 Завантажити CV</a>
+                  <a href="#portfolio" class="btn secondary">📂 Переглянути сертифікати</a>
+              </div>
+          </div>
+          <div class="about-image">
+              <img src="Img/My photo v2.jpg" alt="My Photo">
+          </div>
+      </section>
+      
+      <div class="info-boxes">
+          <a href="#projects" class="info-box">
+              <span class="icon">💻</span>
+              <p>Кількість проєктів</p>
+              <h3>4</h3>
+          </a>
+          <a href="#certificates" class="info-box">
+              <span class="icon">🎓</span>
+              <p>Сертифікати</p>
+              <h3>1</h3>
+          </a>
+          <a href="#experience" class="info-box">
+              <span class="icon">🌍</span>
+              <p>Років досвіду</p>
+              <h3>3</h3>
+          </a>
+      </div>
+        
+        <!-- ====== Портфоліо ====== -->
+<section id="portfolio">
+    <h2>Портфоліо</h2>
+    <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="project">Роботи</button>
+        <button class="filter-btn" data-filter="certificate">Сертифікати</button>
+        <button class="filter-btn" data-filter="review">Відгуки</button>
+    </div>
+    
+    <div class="portfolio-container">
+    <!-- Проєкти -->
+    <div class="portfolio-item project" onclick="expandProject(this)">
+        <img src="Img/Robotu-1.png" alt="Project 1">
+        <div class="overlay">
+            <h3>Головна робота</h3>
+            <p>Створюю картки товарів і редагую їх.</p>
+        </div>
+    </div>
+
+        <!-- Сертифікати -->
+        <div class="portfolio-item certificate" style="display: none;" onclick="expandCertificate(this)">
+            <img src="Img/Cirtifikate_1.jpg" alt="Certificate 1">
+            <div class="overlay">
+                <h3>Сертифікат</h3>
+                <p>З курсу "Працюй онлайн"</p>
+            </div>
+        </div>
+        
+    
+        <!-- Відгуки -->
+        <div class="portfolio-item review" style="display: none;">
+            <div class="review-content">
+                <p>“Чудово виконує свою роботу, а головне швидко!”</p>
+                <h4>- Вадим</h4>
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+<!-- ====== Контакти ====== -->
+<section id="contact">
+    <h2>Контакти</h2>
+    <div class="contact-container">
+        <!-- Ліва частина: Інформація + соцмережі -->
+        <div class="contact-info">
+            <h3>Напишіть мені</h3>
+            <p><strong>Email:</strong> lizasheiko320@gmail.com</p>
+            <p><strong>Телефон:</strong> +380 956 808 427</p>
+            <p><strong>Локація:</strong> Україна</p>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/liza_sheiko_/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/share/19fKbaFRi8/?mibextid=wwXIfr" target="_blank">Facebook</a>
+            </div>
+        </div>
+
+        <!-- Права частина: Форма для коментарів -->
+        <div class="comment-section">
+            <h3>Залишити коментар</h3>
+            <form id="commentForm">
+                <input type="text" id="userName" placeholder="Ваше ім'я" required>
+                <textarea id="userComment" placeholder="Ваш коментар" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+            <div id="commentsList"></div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+    
+
+<!-- Модальне вікно для перегляду зображень -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+
+    <script src="code-JS/index.js"></script>
+</body>
+</html>
