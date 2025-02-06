@@ -62,27 +62,41 @@ header {
 /* ====== Головний розділ ====== */
 .hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; 
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 100px 140px;
-    background: radial-gradient(circle, rgba(50, 0, 90, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+    padding: 80px 10%; 
+    text-align: center; 
+    background: radial-gradient(circle, rgba(50, 0, 90, 0.8) 0%, rgba(20, 20, 20, 0.9) 70%);
 }
 
 .hero-text {
-    max-width: 50%;
-    margin-left: 50px;
+    max-width: 80%; 
+    margin-left: 0; 
 }
 
 .hero h2 {
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 42px; 
 }
 
 .hero p {
-    font-size: 18px;
-    margin: 20px 0;
-    color: #bbb;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/* Для екранів більше 768px (планшети і ПК) */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row; 
+        padding: 100px 140px;
+        text-align: left;
+    }
+
+    .hero-text {
+        max-width: 50%;
+        margin-left: 50px;
+    }
 }
 
 .hero-image {
@@ -206,11 +220,11 @@ p {
 }
 
 .about-image img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 20px #a855f7;
-    margin-right: 150px;
 }
 
 /* ====== Інфо-блоки ====== */
@@ -505,18 +519,41 @@ p {
 }
 
 .comment-section {
-    width: 60%; /* Збільшили ширину */
+    width: 90%; 
+    max-width: 600px; 
     background: rgba(255, 255, 255, 0.1);
-    padding: 30px; /* Збільшили відступи */
+    padding: 20px; 
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 16px; 
+    margin: 50px auto 0 auto; 
+    text-align: center; 
 }
 
 .comment-section h3 {
     color: #a855f7;
-    font-size: 24px; /* Збільшили заголовок */
-    margin-bottom: 15px;
+    font-size: 22px; 
+    margin-bottom: 10px;
 }
+
+/* Для малих екранів збільшуємо відступ */
+@media (max-width: 600px) {
+    .comment-section {
+        margin-top: 80px; /* Збільшуємо простір між секціями */
+    }
+}
+
+
+/* Для великих екранів */
+@media (min-width: 768px) {
+    .comment-section {
+        width: 60%;
+        font-size: 18px;
+        padding: 30px;
+        text-align: left;
+        margin-top: 0px !important; /* Повертаємо відступ до стандартного */
+    }
+}
+
 
 #commentForm {
     display: flex;
@@ -587,14 +624,27 @@ p {
 
 /* ====== Сертифікати ====== */
 .portfolio-item.certificate {
-    width: 30%;
+    width: 100%; /* Робимо повну ширину на мобільних */
+    max-width: 300px; /* Обмежуємо розмір */
     cursor: pointer;
+    margin: 0 auto; /* Центруємо */
 }
 
+/* Робимо зображення адаптивним */
 .portfolio-item.certificate img {
     width: 100%;
     border-radius: 10px;
+    display: block; /* Запобігає зайвим пробілам */
 }
+
+/* Для великих екранів */
+@media (min-width: 768px) {
+    .portfolio-item.certificate {
+        width: 30%;
+        max-width: none;
+    }
+}
+
 
 /* ====== Анімація збільшення сертифікатів ====== */
 .expanded-certificate {
