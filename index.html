@@ -1,172 +1,238 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ліза Шейко - Portfolio</title>
-    <link rel="stylesheet" href="code-css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Портфоліо Лізи Шейко — контент-менеджера, який працює з сайтами, маркетплейсами, SEO-контентом та соціальними мережами." />
+  <meta name="theme-color" content="#0f1714" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f5efe4" media="(prefers-color-scheme: light)" />
+  <title>Ліза Шейко — Контент-менеджер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./code-css/index.css" />
 </head>
 <body>
-    <header>
-        <h1 class="logo">Ліза Шейко</h1>
-    </header>
-    
-    <nav class="side-nav">
-        <ul>
-            <li><a href="#home"><img src="Img/Home.png" alt="Home"></a></li>
-            <li><a href="#about"><img src="Img/People.png" alt="About"></a></li>
-            <li><a href="#portfolio"><img src="Img/Portfolio.png" alt="Portfolio"></a></li>
-            <li><a href="#contact"><img src="Img/Contact-white.png" alt="Contact"></a></li>
-        </ul>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="На головну секцію">
+      <span class="brand-mark">LS</span>
+      <span class="brand-text">Ліза Шейко</span>
+    </a>
+
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="Відкрити меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" data-nav aria-label="Основна навігація">
+      <a href="#about">Про мене</a>
+      <a href="#skills">Навички</a>
+      <a href="#portfolio">Портфоліо</a>
+      <a href="#contact">Контакти</a>
     </nav>
-    
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-text">
-                <h2>Контент <span class="highlight">Менеджер</span></h2>
-                <p>Створюю, редагую та публікую контент на веб-сайтах і в соцмережах, забезпечуючи його якість та відповідність аудиторії.</p>
-                <div class="tech-tags">
-                    <span>Horoshop</span><span>Prom</span><span>Rozetka</span><span>Instagram</span>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="Img/Customer Persona 3D Animated Icon.gif" alt="Animated Representation">
-            </div>
-        </section>
-        
-        <section id="about" class="about">
-          <div class="about-content">
-              <h2>Про мене</h2>
-              <p class="subtitle">🚀 Перетворюю ідеї і концепти в реальність</p>
-              <h1>Привіт я <br><span class="highlight">Ліза Шейко</span></h1>
-              <p class="description">🔹 Створення та редагування контенту — написання текстів, підбір зображень, відео, інфографіки.</p>
-                <p class="description">🔹 Адміністрування сайту — наповнення сторінок, оновлення інформації, оптимізація структури контенту.</p>
-                <p class="description">🔹 SEO-оптимізація — використання ключових слів, мета-описів для покращення видимості сайту в пошукових системах.</p>
-                <p class="description">🔹 Співпраця з командою — комунікація з копірайтерами, дизайнерами, маркетологами.</p>
-                <p class="description">🔹 Робота в соцмережах — публікація постів, ведення сторінок, взаємодія з аудиторією.</p>
-              <div class="buttons">
-                  <a href="Img/Резюме.pdf" class="btn primary" download>📥 Завантажити CV</a>
-                  <a href="#portfolio" class="btn secondary">📂 Переглянути сертифікати</a>
-              </div>
-          </div>
-          <div class="about-image">
-              <img src="Img/My photo v2.jpg" alt="My Photo">
-          </div>
-      </section>
-      
-      <div class="info-boxes">
-          <a href="#projects" class="info-box">
-              <span class="icon">💻</span>
-              <p>Кількість проєктів</p>
-              <h3>4</h3>
-          </a>
-          <a href="#certificates" class="info-box">
-              <span class="icon">🎓</span>
-              <p>Сертифікати</p>
-              <h3>1</h3>
-          </a>
-          <a href="#experience" class="info-box">
-              <span class="icon">🌍</span>
-              <p>Років досвіду</p>
-              <h3>3</h3>
-          </a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Content Manager • E-commerce • Social Media</p>
+        <h1>Створюю контент, який допомагає брендам виглядати впевнено онлайн.</h1>
+        <p class="hero-description">
+          Наповнюю сайти, оформлюю картки товарів, працюю з текстами, зображеннями,
+          SEO-описами та сторінками у соцмережах. Допомагаю зробити контент структурованим,
+          зрозумілим і приємним для аудиторії.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#portfolio">Переглянути роботи</a>
+          <a class="btn btn-secondary" href="Img/Резюме.pdf" download>Завантажити CV</a>
+        </div>
+        <div class="hero-tags" aria-label="Платформи та напрямки роботи">
+          <span>Horoshop</span>
+          <span>Prom</span>
+          <span>Rozetka</span>
+          <span>Instagram</span>
+          <span>SEO content</span>
+        </div>
       </div>
-        
-        <!-- ====== Портфоліо ====== -->
-<section id="portfolio">
-    <h2>Портфоліо</h2>
-    <div class="portfolio-filter">
-        <button class="filter-btn active" data-filter="project">Роботи</button>
-        <button class="filter-btn" data-filter="certificate">Сертифікати</button>
-        <button class="filter-btn" data-filter="review">Відгуки</button>
+
+      <div class="hero-visual reveal" aria-label="Візуальний блок портфоліо">
+        <div class="orbital-card main-profile-card">
+          <div class="profile-image-wrap">
+            <img src="Img/My photo v2.jpg" alt="Фото Лізи Шейко" loading="eager" />
+          </div>
+          <div>
+            <p class="profile-label">Контент-менеджер</p>
+            <h2>Ліза Шейко</h2>
+            <p>Сайти, маркетплейси, соцмережі, SEO-описи</p>
+          </div>
+        </div>
+        <div class="floating-card floating-card-top">
+          <strong>3+ роки</strong>
+          <span>досвіду з контентом</span>
+        </div>
+        <div class="floating-card floating-card-bottom">
+          <strong>4+</strong>
+          <span>проєкти у портфоліо</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-section" aria-label="Короткі показники">
+      <div class="stats-grid reveal">
+        <a class="stat-card" href="#portfolio">
+          <span>01</span>
+          <strong>4+</strong>
+          <p>проєкти з наповнення та редагування контенту</p>
+        </a>
+        <a class="stat-card" href="#portfolio" data-filter-link="certificate">
+          <span>02</span>
+          <strong>3</strong>
+          <p>дипломи та сертифікати для підтвердження кваліфікації</p>
+        </a>
+        <a class="stat-card" href="#contact">
+          <span>03</span>
+          <strong>24/7</strong>
+          <p>увага до деталей, структури та якості подачі</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Про мене</p>
+        <h2>Контент без хаосу: логіка, візуал і точність в одному процесі.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h3>Що я роблю</h3>
+          <p>
+            Створюю та редагую контент для сайтів і соціальних мереж: тексти, описи,
+            зображення, відео, інфографіку, структуру сторінок і товарні картки.
+          </p>
+        </article>
+        <article class="about-card reveal">
+          <h3>Як працюю</h3>
+          <p>
+            Дотримуюся структури, перевіряю актуальність інформації, адаптую матеріали
+            під аудиторію та підтримую візуальну цілісність бренду.
+          </p>
+        </article>
+        <article class="about-card reveal">
+          <h3>Де корисна</h3>
+          <p>
+            Інтернет-магазини, маркетплейси, Instagram-сторінки, корпоративні сайти,
+            каталоги товарів, блоги та промосторінки.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Навички</p>
+        <h2>Ключові напрямки, з якими я можу допомогти бізнесу.</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <span class="skill-icon">✦</span>
+          <h3>Наповнення сайтів</h3>
+          <p>Додавання товарів, редагування сторінок, оновлення інформації та структури.</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-icon">⌁</span>
+          <h3>SEO-описи</h3>
+          <p>Робота з ключовими словами, мета-описами, заголовками та читабельністю текстів.</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-icon">◎</span>
+          <h3>Картки товарів</h3>
+          <p>Створення зрозумілих описів, характеристик і візуальної подачі товарів.</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-icon">◌</span>
+          <h3>Соцмережі</h3>
+          <p>Публікація постів, ведення сторінок, взаємодія з аудиторією.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Портфоліо</p>
+        <h2>Роботи, документи та відгуки в одному місці.</h2>
+      </div>
+
+      <div class="portfolio-filter reveal" role="tablist" aria-label="Фільтр портфоліо">
+        <button class="filter-btn active" type="button" data-filter="project" role="tab" aria-selected="true">Роботи</button>
+        <button class="filter-btn" type="button" data-filter="certificate" role="tab" aria-selected="false">Сертифікати</button>
+        <button class="filter-btn" type="button" data-filter="review" role="tab" aria-selected="false">Відгуки</button>
+      </div>
+
+      <div class="portfolio-grid reveal" data-portfolio-grid aria-live="polite"></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Контакти</p>
+        <h2>Готова обговорити контент, сайт або новий проєкт.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Напишіть мені</h3>
+          <a href="mailto:lizasheiko320@gmail.com">lizasheiko320@gmail.com</a>
+          <a href="tel:+380956808427">+380 956 808 427</a>
+          <p>Україна • дистанційна співпраця</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/liza_sheiko_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/share/19fKbaFRi8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </div>
+        </div>
+
+        <div class="comment-card reveal">
+          <h3>Залишити коментар</h3>
+          <form id="commentForm" autocomplete="off">
+            <label>
+              <span>Ваше ім’я</span>
+              <input type="text" id="userName" name="userName" placeholder="Наприклад: Анна" required minlength="2" />
+            </label>
+            <label>
+              <span>Коментар</span>
+              <textarea id="userComment" name="userComment" placeholder="Напишіть ваш відгук або питання" required minlength="3"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Відправити</button>
+          </form>
+          <div class="comments-list" id="commentsList" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="currentYear"></span> Ліза Шейко. Контент-менеджер.</p>
+    <a href="#home">Повернутися нагору</a>
+  </footer>
+
+  <dialog class="image-modal" id="imageModal" aria-label="Перегляд матеріалу з портфоліо">
+    <button class="modal-close" type="button" data-modal-close aria-label="Закрити вікно">×</button>
+    <div class="modal-layout">
+      <img id="modalImg" alt="Збільшене зображення з портфоліо" />
+      <div class="modal-info">
+        <span id="modalMeta"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
     </div>
-    
-    <div class="portfolio-container">
-    <!-- Проєкти -->
-    <div class="portfolio-item project" onclick="expandProject(this)">
-        <img src="Img/Robotu-1.png" alt="Project 1">
-        <div class="overlay">
-            <h3>Головна робота</h3>
-            <p>Створюю картки товарів і редагую їх.</p>
-        </div>
-    </div>
+  </dialog>
 
-        <!-- Сертифікати -->
-        <div class="portfolio-item certificate" style="display: none;" onclick="expandCertificate(this)">
-            <img src="Img/Scovoroda.jpg" alt="Certificate 1">
-            <div class="overlay">
-                <h3>Диплом бакалавра</h3>
-                <p>Харківський національний педагогічний університет імені Г.С.Сковороди</p>
-            </div>
-        </div>
-        <div class="portfolio-item certificate" style="display: none;" onclick="expandCertificate(this)">
-            <img src="Img/Beket.jpg" alt="Certificate 1">
-            <div class="overlay">
-                <h3>Диплом магістра</h3>
-                <p>ХНУМГ ім. О.М.Бекетова</p>
-            </div>
-        </div>
-        <div class="portfolio-item certificate" style="display: none;" onclick="expandCertificate(this)">
-            <img src="Img/Cirtifikate_1.jpg" alt="Certificate 1">
-            <div class="overlay">
-                <h3>Сертифікат</h3>
-                <p>З курсу "Працюй онлайн"</p>
-            </div>
-        </div>
-        
-    
-        <!-- Відгуки -->
-        <div class="portfolio-item review" style="display: none;">
-            <div class="review-content">
-                <p>“Чудово виконує свою роботу, а головне швидко!”</p>
-                <h4>- Вадим</h4>
-            </div>
-        </div>
-    
-    </div>
-</section>
-
-<!-- ====== Контакти ====== -->
-<section id="contact">
-    <h2>Контакти</h2>
-    <div class="contact-container">
-        <!-- Ліва частина: Інформація + соцмережі -->
-        <div class="contact-info">
-            <h3>Напишіть мені</h3>
-            <p><strong>Email:</strong> lizasheiko320@gmail.com</p>
-            <p><strong>Телефон:</strong> +380 956 808 427</p>
-            <p><strong>Локація:</strong> Україна</p>
-
-            <div class="social-links">
-                <a href="https://www.instagram.com/liza_sheiko_/" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/share/19fKbaFRi8/?mibextid=wwXIfr" target="_blank">Facebook</a>
-            </div>
-        </div>
-
-        <!-- Права частина: Форма для коментарів -->
-        <div class="comment-section">
-            <h3>Залишити коментар</h3>
-            <form id="commentForm">
-                <input type="text" id="userName" placeholder="Ваше ім'я" required>
-                <textarea id="userComment" placeholder="Ваш коментар" required></textarea>
-                <button type="submit">Відправити</button>
-            </form>
-            <div id="commentsList"></div>
-        </div>
-    </div>
-</section>
-
-
-    </main>
-    
-
-<!-- Модальне вікно для перегляду зображень -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
-
-
-    <script src="code-JS/index.js"></script>
+  <script src="./code-JS/data-works.js" defer></script>
+  <script src="./code-JS/data-certificates.js" defer></script>
+  <script src="./code-JS/data-reviews.js" defer></script>
+  <script src="./code-JS/modal.js" defer></script>
+  <script src="./code-JS/portfolio.js" defer></script>
+  <script src="./code-JS/comments.js" defer></script>
+  <script src="./code-JS/app.js" defer></script>
 </body>
 </html>
